@@ -12,7 +12,6 @@
 
 html {
   background-image: var(--bg-gradient);
-  background-size: cover;
   background-attachment: fixed;
   background-size: 100vh;
 }

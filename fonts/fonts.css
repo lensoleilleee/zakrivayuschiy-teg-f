@@ -4,7 +4,7 @@
     local('Inter-Variable'),
     url(./Inter-Variable.woff2) format('woff2 supports variations'),
     url(./Inter-Variable.woff2) format('woff2-variations');
-    font-weight: var(--main_font-weight), var(--accent_weight-weight);
+    font-weight: 400, 700;
     font-display: swap; /*чтобы браузер сначала показывал альтернативный шрифт, а потом заменял его, когда загрузит нужный*/
 }
 
