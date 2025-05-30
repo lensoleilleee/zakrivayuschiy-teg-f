@@ -9,3 +9,107 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+@keyframes scaling {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes sparkles {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.buttons_with_text::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: white;
+  mix-blend-mode: difference;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(-100%);
+}
+
+.buttons_with_text:hover::before,
+.card__icon-button:hover + .buttons_with_text::before {
+  transform: translateX(0);
+}
+
+/*---------------------------------------------------------кнопка сердца-----------------------------------------------------------------------*/
+.sparks {
+  opacity: 0;
+}
+
+.card__icon-button .core {
+  fill: transparent;
+  transition: none;
+}
+
+.card__icon-button .main-body {
+  fill: transparent;
+  transition: none;
+}
+
+.card__icon-button:hover .core {
+  fill: var(--contour-color);
+  transition: fill 0.3s linear 0s;
+}
+
+.card__icon-button:hover .main-body {
+  fill: var(--contour-color);
+  transition: fill 0.05s linear 0.3s;
+}
+
+.card__icon-button:active .core {
+  fill: var(--animation-fill-color);
+}
+
+.card__icon-button:active .main-body {
+  fill: var(--animation-fill-color);
+}
+
+.like-icon.is-liked .core {
+  fill: var(--animation-body-color);
+  transition: fill 0.3s linear 0s;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--animation-body-color);
+  transition: fill 0.05s linear 0.3s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--animation-body-color);
+  transition: fill 0.06s linear 0.3s;
+}
+
+.heart {
+  transform: scale(1);
+  transition: transform 0.3s ease-in;
+  transform-origin: center;
+}
+
+.like-icon.is-liked .heart {
+  animation: scaling 0.3s ease-in 0.1s forwards;
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparkles 0.3s ease-in 0.3s forwards;
+}

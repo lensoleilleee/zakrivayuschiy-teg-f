@@ -3,7 +3,7 @@
     repeating-linear-gradient(to right, #d3d3d3 0px 2px, transparent 2px 4px),
     linear-gradient(to bottom, #E7E7E7 0.01%, #1A1A1A 100%);
 
-    --accent_font-family: 'PressStart2P', system-ui;
+    --accent_font-family: 'PressStart2P', fantasy;
     --main_font-family: 'Inter-Variable', sans-serif;
     --main_font-weight: 400;
     --accent_font-weight: 700;
