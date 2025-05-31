@@ -69,6 +69,7 @@ html {
   width: 100%;
   height: auto;
   display: block;
+  border-block: 2px solid var(--border_color);
 }
 
 .section_text {
@@ -111,12 +112,14 @@ html {
   filter: sepia(0.7);
 }
 
-.give_up .img-section {
-  overflow: hidden;
-}
-
 .blur_filter {
   filter: blur(20px);
+  border-block: none;
+}
+
+.give_up .img-section {
+  overflow: hidden;
+  border-block: 2px solid var(--border_color);
 }
 
 .some_filters {
@@ -138,7 +141,7 @@ html {
   max-width: 696px;
   height: auto;
   overflow: hidden;
-  margin-block-end: 29px;
+  margin-block-end: 26px;
 }
 
 .label_uppercase {
@@ -206,7 +209,7 @@ html {
 
 .buttons {
   display: flex;
-  margin-block: 25px;
+  margin-block: 24px;
   justify-content: flex-end;
   margin-inline-end: 25px;
   gap: 5px;
@@ -336,4 +339,7 @@ html {
   .button__text {
     text-wrap: nowrap;
   }
+
+  .button_close {
+    margin-right: 9px;
 }
