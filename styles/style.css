@@ -69,7 +69,6 @@ html {
   width: 100%;
   height: auto;
   display: block;
-  border-block: 2px solid var(--border_color);
 }
 
 .section_text {
@@ -114,12 +113,10 @@ html {
 
 .blur_filter {
   filter: blur(20px);
-  border-block: none;
 }
 
 .give_up .img-section {
   overflow: hidden;
-  border-block: 2px solid var(--border_color);
 }
 
 .some_filters {
@@ -142,6 +139,7 @@ html {
   height: auto;
   overflow: hidden;
   margin-block-end: 26px;
+  border-block: 2px solid var(--border_color);
 }
 
 .label_uppercase {
