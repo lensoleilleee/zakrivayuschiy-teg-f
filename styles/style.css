@@ -275,7 +275,7 @@ html {
   overflow: hidden;
   mix-blend-mode: difference;
   background-color: black;
-  padding-top: 6px;
+  padding-top: 2px;
 }
 
 .save_button {
