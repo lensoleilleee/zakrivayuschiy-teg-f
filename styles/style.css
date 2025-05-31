@@ -300,7 +300,6 @@ html {
   }
 
   .dialog[open] {
-    margin-top: 340px;
     padding-left: 39px;
     column-gap: 7px;
   }
